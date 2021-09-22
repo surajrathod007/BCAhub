@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/purple_500"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+
+        android:id="@+id/imgDrawer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/geek"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="BCA Hub"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="Stay Hungry, Stay Foolish!"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
