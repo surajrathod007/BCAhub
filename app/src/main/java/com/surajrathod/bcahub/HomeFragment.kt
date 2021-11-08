@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
 
 
-class HomeFragment : Fragment() {
+class HomeFragment : androidx.fragment.app.Fragment() {
 
     lateinit var dbref: DatabaseReference
     lateinit var recyclerDashboard: RecyclerView //creating variable of recycler view

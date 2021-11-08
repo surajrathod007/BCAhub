@@ -25,8 +25,8 @@
                 android:layout_height="wrap_content"
                 android:theme="@style/ThemeOverlay.AppCompat.Light"
                 android:minHeight="?attr/actionBarSize"
-                android:background="@color/white"
-
+                android:background="#5297f4"
+                app:titleTextColor="@color/white"
                 android:elevation="5dp"
 
                 app:layout_scrollFlags="scroll|enterAlways"

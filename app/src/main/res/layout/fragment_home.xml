@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
 
+    android:background="#75acf6">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -14,15 +15,18 @@
 
     <RelativeLayout
         android:id="@+id/progressLayout"
-        android:background="@color/white"
+        android:background="#75acf6"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:visibility="visible">
 
         <ProgressBar
+            android:outlineSpotShadowColor="@color/black"
             android:id="@+id/progressBar"
-            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             />
 
 
     </RelativeLayout>

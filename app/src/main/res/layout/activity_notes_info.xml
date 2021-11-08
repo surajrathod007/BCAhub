@@ -2,6 +2,7 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#75acf6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Notes_info">
@@ -36,24 +37,15 @@
                 android:layout_height="wrap_content"
                 android:theme="@style/ThemeOverlay.AppCompat.Light"
                 android:minHeight="?attr/actionBarSize"
-                android:background="@color/white"
-
+                android:background="#5297f4"
+                app:titleTextColor="@color/white"
                 android:elevation="5dp"
 
                 app:layout_scrollFlags="scroll|enterAlways"
                 />
         </com.google.android.material.appbar.AppBarLayout>
-        <!--
-                <WebView
-                    android:layout_marginTop="56dp"
-                    android:id="@+id/contentView"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    />
-                    -->
+
+
 
 
 
@@ -63,20 +55,23 @@
 
 
     <ScrollView
+
         android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <RelativeLayout
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
 
                 android:id="@+id/llContent"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:background="#ffffff"
+                android:background="@drawable/notes_background"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:weightSum="6">
@@ -91,29 +86,30 @@
                     android:id="@+id/imgNotes"
                     android:layout_width="0dp"
                     android:layout_height="120dp"
+                    android:layout_marginStart="7dp"
                     android:layout_weight="1.5"
                     android:padding="5dp"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/ic_launcher" />
 
 
-
-
                 <RelativeLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4.5">
 
                     <TextView
+
                         android:id="@+id/txtTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="4dp"
                         android:autoSizeMaxTextSize="18sp"
                         android:autoSizeMinTextSize="12sp"
                         android:autoSizeTextType="uniform"
+                        android:padding="4dp"
                         android:text="Name of the book"
-                        android:textColor="#000000"
+                        android:textColor="#293559"
                         android:textSize="18sp" />
 
                     <TextView
@@ -144,13 +140,12 @@
                 <!--Many times we see that texts have an image along with them totheir right or left. This is added with the help of thedrawableLeft (or drawableRight and so on) attribute-->
 
 
-
-
             </LinearLayout>
+
             <RelativeLayout
-                android:layout_below="@+id/llContent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llContent">
 
                 <Button
                     android:id="@+id/btnDownload"
@@ -160,8 +155,9 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
-                    android:backgroundTint="#03A9F4"
-                    android:text="Download Pdf" />
+                    android:background="@drawable/upload_button_bg"
+                    android:text="Download Pdf"
+                    android:textColor="#293559" />
 
 
                 <androidx.cardview.widget.CardView
@@ -170,23 +166,28 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnDownload"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="10dp"
-                    android:elevation="6dp">
+                    android:backgroundTint="#eaf1ff"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="20dp">
 
                     <RelativeLayout
                         android:id="@+id/relativeDesc"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
 
 
                         <TextView
-                            android:layout_margin="5dp"
                             android:id="@+id/txtDetailsTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
                             android:text="Note Details"
-
+                            android:textColor="#293559"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -201,6 +202,7 @@
                             android:layout_marginEnd="5dp"
                             android:layout_marginBottom="5dp"
                             android:text="Author : Suraj"
+                            android:textColor="#293559"
                             android:textSize="15sp" />
 
                         <TextView
@@ -236,13 +238,10 @@
                         </RelativeLayout>
 
 
-
                     </RelativeLayout>
 
 
-
                 </androidx.cardview.widget.CardView>
-
 
 
             </RelativeLayout>

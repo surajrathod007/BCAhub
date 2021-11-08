@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.makeramen.roundedimageview.RoundedImageView
 import com.squareup.picasso.Picasso
 
 
@@ -18,7 +20,7 @@ class RecyclerAdapter(val context: Context,val notesList : ArrayList<Notes>) : R
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.single_row_notes,parent,false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.notes_container,parent,false)
 
         return MyViewHolder(itemView)
     }
@@ -60,11 +62,30 @@ class RecyclerAdapter(val context: Context,val notesList : ArrayList<Notes>) : R
 
     class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
+/*
         val imgNotes : ImageView = itemView.findViewById(R.id.imgNotes)
         val txtTitle : TextView = itemView.findViewById(R.id.txtTitle)
         val txtSem : TextView = itemView.findViewById(R.id.txtSem)
         val txtSubject : TextView = itemView.findViewById(R.id.txtSubject)
         val cardView : CardView = itemView.findViewById(R.id.cardViewDashboard)
+
+ */
+
+
+
+
+
+
+        val imgNotes : RoundedImageView = itemView.findViewById(R.id.imageRound)
+        val txtTitle : TextView = itemView.findViewById(R.id.notesTitle)
+        val txtSem : TextView = itemView.findViewById(R.id.notesSem)
+        val txtSubject : TextView = itemView.findViewById(R.id.notesSub)
+        val cardView : ConstraintLayout = itemView.findViewById(R.id.notesContainer)
+
+
+
+
+
 
     }
 }

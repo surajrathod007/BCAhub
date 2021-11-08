@@ -2,6 +2,7 @@ package com.surajrathod.bcahub
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -128,6 +129,18 @@ class MainActivity : AppCompatActivity() {
                     //supportActionBar?.title = "About Us"
                     drawerLayout.closeDrawers()
                 }
+
+                R.id.nav_upload->{
+                    val intent = Intent(this@MainActivity,
+                        upload_pdf::class.java
+                    )
+
+
+
+                    startActivity(intent) //start the activity, in adapter we have to use context
+                    drawerLayout.closeDrawers()
+                    it.isChecked = false
+                }
             }
             return@setNavigationItemSelectedListener true
         }
@@ -146,6 +159,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.title = "Toolbar Title"
         supportActionBar?.setHomeButtonEnabled(true) //ham burger icon enable
         supportActionBar?.setDisplayHomeAsUpEnabled(true) //display hamburger
+
     }
 
 

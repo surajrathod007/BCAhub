@@ -27,6 +27,11 @@
             android:icon="@drawable/ic_about_icon"
             android:title="About Us" />
 
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_home_icon"
+            android:title="Upload Pdf" />
+
 
     </group>
 </menu>

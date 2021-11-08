@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBF6F5"
+    android:background="#75acf6"
     tools:context=".AboutFragment">
 
 
@@ -20,6 +20,7 @@
 
         <TextView
             android:id="@+id/title"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -27,11 +28,12 @@
             android:fontFamily="@font/archivo_black"
             android:text="BCA Hub"
             android:textSize="36sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:textColor="@color/white"
             android:id="@+id/underLine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +74,9 @@
                 android:layout_weight="1"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#eaf1ff"
+
+                app:cardCornerRadius="25dp"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -109,7 +113,8 @@
                 android:layout_weight="1"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#eaf1ff"
+                app:cardCornerRadius="25dp"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -158,10 +163,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp"
                 android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#eaf1ff"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -197,10 +203,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp"
                 android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#eaf1ff"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
