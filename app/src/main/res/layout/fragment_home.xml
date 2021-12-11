@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
 
-    android:background="#75acf6">
+    android:background="@drawable/gredient1">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -15,7 +15,7 @@
 
     <RelativeLayout
         android:id="@+id/progressLayout"
-        android:background="#75acf6"
+        android:background="@drawable/gredient1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:visibility="visible">

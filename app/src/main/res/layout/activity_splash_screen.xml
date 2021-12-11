@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eaf1ff"
+    android:background="@drawable/gredient1"
+
     android:orientation="vertical"
     tools:context=".SplashScreenActivity">
 
@@ -23,12 +24,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
+        android:textColor="@color/white"
         android:text="BCA Hub"
         android:textSize="35sp" />
 
     <TextView
         android:layout_marginTop="220dp"
         android:id="@+id/textView6"
+        android:textColor="#CBFFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
